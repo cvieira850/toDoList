@@ -26,6 +26,7 @@ const TodoList = ({ todos, addTodo, removeTodo }) => (
 );
 
 TodoList.propTypes = {
+  removeTodo: PropTypes.func.isRequired,
   addTodo: PropTypes.func.isRequired,
   todos: PropTypes.arrayOf(
     PropTypes.shape({
